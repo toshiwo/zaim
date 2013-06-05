@@ -1,5 +1,10 @@
 require "zaim/version"
+require 'zaim/configuration'
 
 module Zaim
-  # Your code goes here...
+
+  class << self
+    include Zaim::Configuration
+  end
+
 end
