@@ -1,5 +1,6 @@
 require "zaim/version"
 require 'zaim/configuration'
+require 'zaim/client'
 
 module Zaim
 
