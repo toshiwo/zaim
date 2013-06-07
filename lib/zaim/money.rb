@@ -9,5 +9,9 @@ module Zaim
       post('/v2/home/money/payment', params)
     end
 
+    def income params
+      post('/v2/home/money/income', params)
+    end
+
   end
 end
