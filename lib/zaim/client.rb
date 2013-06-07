@@ -1,11 +1,13 @@
 require 'zaim/request'
 require 'zaim/user'
+require 'zaim/money'
 
 module Zaim
   class Client
     include Zaim::Configuration
     include Zaim::Request
     include Zaim::User
+    include Zaim::Money
 
     def initialize options = {}
       OptionKeys.each do |attr_name|

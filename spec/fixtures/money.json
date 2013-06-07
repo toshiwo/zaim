@@ -1,0 +1,36 @@
+{
+  "money": [
+  {
+    "id": 381, // unique input id
+    "type": "income", // income or pay
+    "user_id": 1,
+    "date": "2011-11-07",
+    "category_id": 11,
+    "genre_id": 0,
+    "to_account_id": 34555,
+    "from_account_id": 0,
+    "amount": 10000,
+    "comment": "",
+    "place": "",
+    "created": "2011-11-07 01:10:50",
+    "currency_code": "JPY"
+  },
+  {
+    "id": 382,
+    "type": "payment",
+    "user_id": 1,
+    "date": "2011-11-07",
+    "category_id": 101,
+    "genre_id": 10101,
+    "genre_id": 0,
+    "from_account_id": 34555,
+    "to_account_id": 0,
+    "comment": "",
+    "place": "",
+    "amount": 100,
+    "created": "2011-11-07 01:12:00",
+    "currency_code": "JPY"
+  }
+  ],
+  "requested": 1321782829
+}
