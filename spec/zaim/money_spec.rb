@@ -80,4 +80,27 @@ describe Zaim::Money do
     it { expect( subject ).to include('user') }
   end
 
+  describe "#transfer" do
+
+    let(:request_url) { 'https://api.zaim.net/v2/home/money/transfer' }
+    let(:response_body) { File.read('spec/fixtures/money/transfer.json') }
+
+    let(:params) { {
+        category_id: 100,
+        amount: 1000,
+        date: "2011-11-07 01:23:45"
+      } }
+
+    before do
+      stub_request( :post, request_url ).to_return( response )
+    end
+
+    subject { client.transfer params }
+
+    it { expect( subject ).to be_an_instance_of Hash }
+    it { expect( subject ).to include('requested') }
+    it { expect( subject ).to include('money') }
+    it { expect( subject ).to include('user') }
+  end
+
 end
