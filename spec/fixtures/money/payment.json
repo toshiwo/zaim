@@ -1,0 +1,29 @@
+{
+  "stamps": {
+    "kiriban": {
+      "image_url": "http://f.zaim.net/seal/cup.png",
+      "name": "Get a milestone stamp!",
+      "description": "Just wrote 100 times."
+    },
+    "repeat": {
+      "image_url": "http://f.zaim.net/seal/cup.png",
+      "name": "Get the ongoing stamp!",
+      "description": "10 consecutive days."
+    },
+    "first": {
+      "image_url": "http://f.zaim.net/seal/cup.png",
+      "name": "Get the first stamp!",
+      "description": "Wrote for the first time today."
+    }
+  },
+  "money": {
+    "id": 10002,
+    "modified": "2011-11-07 01:23:45"
+  },
+  "user": {
+    "input_count": 12,
+    "repeat_count": 1,
+    "day_count": 10
+  },
+  "requested": "1305217527"
+}

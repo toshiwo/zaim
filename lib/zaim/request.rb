@@ -9,6 +9,11 @@ module Zaim
     end
     private :get
 
+    def post(path, params = {})
+      request(:post, path, params)
+    end
+    private :post
+
     def request(method, path, params = {})
       response = connection.send(method) do |request|
         case method
