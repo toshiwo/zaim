@@ -1,3 +1,5 @@
+require 'webmock/rspec'
+
 if ENV['COVERAGE']
   require "simplecov"
 

@@ -11,5 +11,15 @@ module Zaim
       self
     end
 
+    def credentials
+      {
+        :consumer_key    => @consumer_key,
+        :consumer_secret => @consumer_secret,
+        :token           => @oauth_token,
+        :token_secret    => @oauth_token_secret,
+      }
+    end
+    private :credentials
+
   end
 end

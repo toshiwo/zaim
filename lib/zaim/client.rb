@@ -1,6 +1,11 @@
+require 'zaim/request'
+require 'zaim/user'
+
 module Zaim
   class Client
     include Zaim::Configuration
+    include Zaim::Request
+    include Zaim::User
 
     def initialize options = {}
       OptionKeys.each do |attr_name|

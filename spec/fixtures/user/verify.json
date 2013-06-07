@@ -1,0 +1,15 @@
+{
+  "me": {
+    "id": 10000000, // unique user id
+    "login": "XXXXXXX", // unique string for user login
+    "name": "MyName", // user name
+    "input_count": 100, // total number of inputs
+    "day_count": 10, // total number of days
+    "repeat_count": 2, // days continuous recording
+    "day": 1, // start date of the month
+    "week": 3, // first day of the week
+    "month": 7, // start date of the year
+    "currency_code": "JPY" // default currency code
+   },
+   "requested": 1367902710
+}
