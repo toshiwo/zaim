@@ -25,6 +25,14 @@ module Zaim
       put("/v2/home/money/#{ type }/#{ id }", params)
     end
 
+    def delete type, id #, params = {} # TODO:
+      unless check_resource_type type
+        raise ArgumentError, "unkown type argument of '#{ type }'"
+      end
+
+      request(:delete, "/v2/home/money/#{ type }/#{ id }")
+    end
+
     def check_resource_type type
       %w( payment income transfer ).include? type.to_s
     end
