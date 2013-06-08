@@ -1,0 +1,17 @@
+{
+  "accounts": [
+    {
+      "id": 1,
+      "name": "Wallet",
+      "color": "#80502C",
+      "icon_url": "https://www.zaim.net/images/icons/cash/wallet.png"
+    },
+    {
+      "id": 2,
+      "name": "Savings",
+      "color": "#80502C",
+      "icon_url": "https://www.zaim.net/images/icons/cash/saving.png"
+    }
+  ],
+  "requested": 1321795444
+}
