@@ -1,6 +1,7 @@
 require 'zaim/request'
 require 'zaim/user'
 require 'zaim/money'
+require 'zaim/category'
 
 module Zaim
   class Client
@@ -8,6 +9,7 @@ module Zaim
     include Zaim::Request
     include Zaim::User
     include Zaim::Money
+    include Zaim::Category
 
     def initialize options = {}
       OptionKeys.each do |attr_name|
