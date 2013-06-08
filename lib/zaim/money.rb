@@ -17,5 +17,18 @@ module Zaim
       post('/v2/home/money/transfer', params)
     end
 
+    def update type, id, params = {}
+      unless check_resource_type type
+        raise ArgumentError, "unknown type argument of '#{ type }'"
+      end
+
+      put("/v2/home/money/#{ type }/#{ id }", params)
+    end
+
+    def check_resource_type type
+      %w( payment income transfer ).include? type.to_s
+    end
+    private :check_resource_type
+
   end
 end
