@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = Zaim::VERSION
   spec.authors       = ["toshiwo"]
   spec.email         = ["toshiwo@toshiwo.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
-  spec.homepage      = ""
+  spec.description   = %q{A Ruby wrapper for the Zaim API.}
+  spec.summary       = spec.description
+  spec.homepage      = "https://github.com/toshiwo/zaim"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
