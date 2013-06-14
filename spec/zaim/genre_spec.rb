@@ -16,9 +16,7 @@ describe Zaim::Genre do
 
     subject { client.genre }
 
-    it { expect( subject ).to be_an_instance_of Hash }
-    it { expect( subject ).to include('requested') }
-    it { expect( subject ).to include('genres') }
+    include_examples "a response", [ 'genres' ]
 
     context "response 'genres'" do
 

@@ -16,9 +16,7 @@ describe Zaim::Category do
 
     subject { client.category }
 
-    it { expect( subject ).to be_an_instance_of Hash }
-    it { expect( subject ).to include('requested') }
-    it { expect( subject ).to include('categories') }
+    include_examples "a response", [ 'categories' ]
 
     context "response 'categories'" do
 
