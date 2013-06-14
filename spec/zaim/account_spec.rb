@@ -16,9 +16,7 @@ describe Zaim::Account do
 
     subject { client.account }
 
-    it { expect( subject ).to be_an_instance_of Hash }
-    it { expect( subject ).to include('requested') }
-    it { expect( subject ).to include('accounts') }
+    include_examples "a response", [ 'accounts' ]
 
     context "response 'accounts'" do
 

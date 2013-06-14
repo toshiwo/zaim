@@ -24,10 +24,7 @@ describe Zaim::Money do
 
     subject { client.payment params }
 
-    it { expect( subject ).to be_an_instance_of Hash }
-    it { expect( subject ).to include('requested') }
-    it { expect( subject ).to include('money') }
-    it { expect( subject ).to include('user') }
+    include_examples "a response", [ 'money', 'user' ]
   end
 
   describe "#income" do
@@ -47,10 +44,7 @@ describe Zaim::Money do
 
     subject { client.income params }
 
-    it { expect( subject ).to be_an_instance_of Hash }
-    it { expect( subject ).to include('requested') }
-    it { expect( subject ).to include('money') }
-    it { expect( subject ).to include('user') }
+    include_examples "a response", [ 'money', 'user' ]
   end
 
   describe "#transfer" do
@@ -70,10 +64,7 @@ describe Zaim::Money do
 
     subject { client.transfer params }
 
-    it { expect( subject ).to be_an_instance_of Hash }
-    it { expect( subject ).to include('requested') }
-    it { expect( subject ).to include('money') }
-    it { expect( subject ).to include('user') }
+    include_examples "a response", [ 'money', 'user' ]
   end
 
 end

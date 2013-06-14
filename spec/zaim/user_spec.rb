@@ -16,9 +16,7 @@ describe Zaim::User do
 
     subject { client.verify }
 
-    it { expect( subject ).to be_an_instance_of Hash }
-    it { expect( subject ).to include('requested') }
-    it { expect( subject ).to include('me') }
+    include_examples "a response", [ 'me' ]
 
     context "response 'me'" do
 

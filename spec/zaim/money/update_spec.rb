@@ -39,10 +39,7 @@ describe Zaim::Money do
 
       subject { client.update :payment, resource_id, params }
 
-      it { expect( subject ).to be_an_instance_of Hash }
-      it { expect( subject ).to include('requested') }
-      it { expect( subject ).to include('money') }
-      it { expect( subject ).to include('user') }
+      include_examples "a response", [ 'money', 'user' ]
     end
 
     context :income do
@@ -58,10 +55,7 @@ describe Zaim::Money do
 
       subject { client.update :income, resource_id, params }
 
-      it { expect( subject ).to be_an_instance_of Hash }
-      it { expect( subject ).to include('requested') }
-      it { expect( subject ).to include('money') }
-      it { expect( subject ).to include('user') }
+      include_examples "a response", [ 'money', 'user' ]
     end
 
     context :transfer do
@@ -72,10 +66,7 @@ describe Zaim::Money do
 
       subject { client.update :transfer, resource_id }
 
-      it { expect( subject ).to be_an_instance_of Hash }
-      it { expect( subject ).to include('requested') }
-      it { expect( subject ).to include('money') }
-      it { expect( subject ).to include('user') }
+      include_examples "a response", [ 'money', 'user' ]
     end
   end
 

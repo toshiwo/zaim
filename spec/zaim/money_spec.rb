@@ -17,9 +17,7 @@ describe Zaim::Money do
 
     subject { client.money }
 
-    it { expect( subject ).to be_an_instance_of Hash }
-    it { expect( subject ).to include('requested') }
-    it { expect( subject ).to include('money') }
+    include_examples "a response"
 
     context "response 'money'" do
 
