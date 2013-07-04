@@ -25,6 +25,18 @@ module Zaim
       put("/v2/home/money/#{ type }/#{ id }", params)
     end
 
+    def update_payment id, params
+      update :payment, id, params
+    end
+
+    def update_income id, params
+      update :income, id, params
+    end
+
+    def update_transfer id, params
+      update :transfer, id, params
+    end
+
     def delete type, id #, params = {} # TODO:
       unless check_resource_type type
         raise ArgumentError, "unknown type argument of '#{ type }'"
