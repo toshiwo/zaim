@@ -45,6 +45,18 @@ module Zaim
       request(:delete, "/v2/home/money/#{ type }/#{ id }")
     end
 
+    def delete_payment id
+      delete :payment, id
+    end
+
+    def delete_income id
+      delete :income, id
+    end
+
+    def delete_transfer id
+      delete :transfer, id
+    end
+
     def check_resource_type type
       %w( payment income transfer ).include? type.to_s
     end
