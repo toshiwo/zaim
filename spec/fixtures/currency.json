@@ -1,0 +1,15 @@
+{
+  "currencies": [
+    {
+      "currency_code": "AUD",
+      "unit": "$",
+      "point": 2
+    },
+    {
+      "currency_code": "JPY",
+      "unit": "￥",
+      "point": 0
+    }
+  ],
+  "requested": 1321796963
+}
